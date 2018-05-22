@@ -1,0 +1,55 @@
+@import url(public.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html{
+    font-size: 13.333vw;
+}
+html,body,.exten{
+    .full(100%,100%,none);
+}
+.exten{
+    .box(vertical);
+}
+section{
+    -webkit-box-flex: 1;
+    background: #f0f0f0;
+}
+.intro{
+    .full(100%,5.02rem,#fff);
+    padding-left:0.33rem ;
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    .in_tab{
+        .full(100%,5.02rem,#fff);
+        tr{
+            border-bottom: 1px solid #F0F0F0;
+        }
+        td{
+//          padding-top: ;
+//          padding-bottom: ;;
+            height: 0.99rem;
+            img{
+                .full(0.8rem,auto,none);
+            }
+            input{
+                border: none;
+                outline: none;
+            }
+        }
+          .coments{
+              width: 95%;
+              border: none;
+          } 
+          ::-webkit-input-placeholder{
+              color: #909090;
+          }
+    }
+   
+}

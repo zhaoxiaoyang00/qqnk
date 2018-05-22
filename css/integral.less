@@ -1,0 +1,75 @@
+@import url(public.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+html{
+    font-size: 13.333vw;
+}
+html,body,.integral{
+    .full(100%,100%,none);
+}
+.intro{
+    .box(vertical);
+}
+section{
+    -webkit-box-flex: 1;
+    background: #F0F0F0;
+    height: 100%;
+}
+.what_int{
+    .full(100%,1.4rem,#fff);
+    padding-left: 0.33rem;
+    box-sizing: border-box;
+    
+    h3{
+        font-size: 0.3rem;
+        line-height: 0.9rem;
+        color: #303030;
+    }
+    p{
+        font-size: 0.24rem;
+        color: #303030;
+    }
+}
+.how_int{
+    margin-top: 0.08rem;
+    .full(100%,3.45rem,#fff);
+    padding-left: 0.33rem;
+    box-sizing: border-box;
+    h4{
+        font-size: 0.3rem;
+        color: #303030;
+        line-height: 0.55rem;
+    }
+     p{
+         line-height: 0.3rem;
+         b{
+             font-size: 0.24rem;
+         }
+        i{
+           font-size: 0.24rem; 
+        }
+    }
+}
+.eff_int{
+    margin-top: 0.08rem;
+     .full(100%,1.4rem,#fff);
+    padding-left: 0.33rem;
+    box-sizing: border-box;
+    
+    h3{
+        font-size: 0.3rem;
+        line-height: 0.9rem;
+        color: #303030;
+    }
+    p{
+        font-size: 0.24rem;
+        color: #303030;
+    }
+}
